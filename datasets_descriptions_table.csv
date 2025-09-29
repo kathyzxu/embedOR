@@ -14,10 +14,3 @@ petropoulos,human embryo cells along three developmental stages,select top 500 g
 klein,mouse embryonic stem cells ,select HVGs + PCA  (dataset previously filtered and normalized),https://www.sciencedirect.com/science/article/pii/S0092867415005000?via%3Dihub,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65525 (supplementary file GSM1599494_ES_d0_main.csv.bz2)
 romanov,mouse diencephalon cells,normalize counts + log-transform + PCA (dataset previously filtered),https://www.nature.com/articles/nn.4462,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672
 kang,PBMCs from lupus patients ,select HVGs + PCA  (dataset previously filtered and normalized),https://pmc.ncbi.nlm.nih.gov/articles/PMC5784859/,"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96583 (samples A, B, C)"
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-6,,,,
