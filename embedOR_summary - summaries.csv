@@ -1,0 +1,242 @@
+dataset,content,preprocessing steps,reference paper link,data accession link,permutation test results,,
+cifar10,color images across 10 image classes,"trained using a convolutional neural network (CNN), informed by the following blog post: https://medium.com/@pslinge144/representation-learning-cifar-10-23b0d9833c40  ",N/A,N/A (downloaded through pytorch),"Data: 5000 points
+Edges: 61892 total, 20424 low-energy
+
+EmbedOR - Mean z-score: -0.5933 ± 0.2165
+UMAP    - Mean z-score: -0.5053 ± 0.2793
+t-SNE   - Mean z-score: -0.5324 ± 0.5668
+
+UMAP p-value:  0.0001
+t-SNE p-value: 0.0001
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: SIGNIFICANT",,
+klein,mouse embryonic stem cells ,"standard preprocessing pipeline (but with 12 PCs, capturing 95% confidence as mentioned in paper)",https://www.sciencedirect.com/science/article/pii/S0092867415005000?via%3Dihub,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65525 (sample1),"Data: 5000 points
+Edges: 11125 total, 3671 low-energy
+
+EmbedOR - Mean z-score: -0.6158 ± 0.4836
+UMAP    - Mean z-score: -0.4910 ± 0.6027
+t-SNE   - Mean z-score: -0.5099 ± 0.6293
+
+UMAP p-value:  0.0001
+t-SNE p-value: 0.0001
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: SIGNIFICANT",,
+camp,mouse arcuate nucleus and median eminence,convert to .npy,https://www.pnas.org/doi/full/10.1073/pnas.1520760112,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75140,"Data: 5000 points
+Edges: 10453 total, 3449 low-energy
+
+EmbedOR - Mean z-score: -0.6483 ± 0.3080
+UMAP    - Mean z-score: -0.4730 ± 0.5913
+t-SNE   - Mean z-score: -0.5106 ± 0.5589
+
+UMAP p-value:  0.0001
+t-SNE p-value: 0.0001
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: SIGNIFICANT",,
+wikipedia,text paragraphs from Simple English Wikipedia,used cohere.ai embedding model to represent paragraphs as vectors,https://arxiv.org/html/2508.15929v1#S4.F3,https://huggingface.co/datasets/Cohere/wikipedia-22-12-simple-embeddings/blob/main/README.md,"Data: 5000 points
+Edges: 65210 total, 21519 low-energy
+
+EmbedOR - Mean z-score: -0.6792 ± 0.2324
+UMAP    - Mean z-score: -0.6109 ± 0.3310
+t-SNE   - Mean z-score: -0.6292 ± 0.4817
+
+UMAP p-value:  0.0001
+t-SNE p-value: 0.0001
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: SIGNIFICANT",,
+tsai,mouse hypothalamus cells,convert to .npy,https://portals.broadinstitute.org/single_cell/study/a-molecular-census-of-arcuate-hypothalamus-and-median-eminence-cell-types,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE93374,"Data: 5000 points
+Edges: 74424 total, 24559 low-energy
+
+EmbedOR - Mean z-score: -0.3704 ± 0.6644
+UMAP    - Mean z-score: 0.0925 ± 0.7993
+t-SNE   - Mean z-score: -0.1866 ± 0.7944
+
+UMAP p-value:  0.0001
+t-SNE p-value: 0.0001
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: SIGNIFICANT",,
+kanton,primate cerebral organoids,N/A (dataset previously preprocessed),https://www.nature.com/articles/s41586-019-1654-9 ,https://github.com/dkobak/low-dim-embeddings-review/tree/main/data/Kanton-et-al/human-409b2 ,"Data: 5000 points
+Edges: 55084 total, 18177 low-energy
+
+EmbedOR - Mean z-score: -0.3486 ± 0.0962
+UMAP    - Mean z-score: -0.2614 ± 0.0895
+t-SNE   - Mean z-score: -0.4078 ± 0.1893
+
+UMAP p-value:  0.0010
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant",,
+wagner,zebrafish embryo cells,standard preprocessing pipeline,https://kleintools.hms.harvard.edu/paper_websites/wagner_zebrafish_timecourse2018/mainpage.html (scanpy version) ,https://www.science.org/doi/10.1126/science.aar4362,"Data: 5000 points
+Edges: 55670 total, 18371 low-energy
+
+EmbedOR - Mean z-score: -0.3445 ± 0.1425
+UMAP    - Mean z-score: -0.2581 ± 0.1848
+t-SNE   - Mean z-score: -0.3799 ± 0.2432
+
+UMAP p-value:  0.0001
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant",,
+paul,myeloid progenitor cells,convert to .npy,https://www.sciencedirect.com/science/article/pii/S0092867415014932,https://zenodo.org/records/3514910,"Data: 5000 points
+Edges: 36829 total, 12153 low-energy
+
+EmbedOR - Mean z-score: -0.3671 ± 0.6384
+UMAP    - Mean z-score: -0.3645 ± 0.6880
+t-SNE   - Mean z-score: -0.3570 ± 0.7164
+
+UMAP p-value:  0.3745
+t-SNE p-value: 0.1163
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  not significant
+EmbedOR < t-SNE: not significant",,
+petropoulos,human embryo cells along three developmental stages,"loaded dataset in chunks because the dataset had many genes, selected top 2000 most variable genes (dataset previously preprocessed)",https://pmc.ncbi.nlm.nih.gov/articles/PMC4868821/,https://zenodo.org/records/13640497),"Data: 5000 points
+Edges: 15380 total, 5075 low-energy
+
+EmbedOR - Mean z-score: -0.6796 ± 0.2106
+UMAP    - Mean z-score: -0.6626 ± 0.3638
+t-SNE   - Mean z-score: -0.6745 ± 0.5024
+
+UMAP p-value:  0.0021
+t-SNE p-value: 0.2502
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant",,
+zeisel,mouse cortex cells,standard preprocessing pipeline,https://www.science.org/doi/full/10.1126/science.aaa1934,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361,"Data: 5000 points
+Edges: 35186 total, 11611 low-energy
+
+EmbedOR - Mean z-score: -0.2731 ± 0.1188
+UMAP    - Mean z-score: -0.2473 ± 0.1161
+t-SNE   - Mean z-score: -0.2864 ± 0.3727
+
+UMAP p-value:  0.0001
+t-SNE p-value: 0.9999
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant",,
+kang,PBMCs from lupus patients ,select HVGs + PCA  (dataset previously filtered and normalized),https://pmc.ncbi.nlm.nih.gov/articles/PMC5784859/,"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96583 (samples A, B, C)","sample A:
+Data: 5000 points
+Edges: 44857 total, 14802 low-energy
+
+EmbedOR - Mean z-score: -0.4268 ± 0.3166
+UMAP    - Mean z-score: -0.3520 ± 0.2649
+t-SNE   - Mean z-score: -0.4686 ± 0.4343
+
+UMAP p-value:  0.0010
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant","sample B: 
+Data: 5000 points
+Edges: 52454 total, 17309 low-energy
+
+EmbedOR - Mean z-score: -0.4474 ± 0.1975
+UMAP    - Mean z-score: -0.3810 ± 0.3654
+t-SNE   - Mean z-score: -0.4775 ± 0.4162
+
+UMAP p-value:  0.0001
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant","sample C:
+Data: 5000 points
+Edges: 61872 total, 20417 low-energy
+
+EmbedOR - Mean z-score: -0.4646 ± 0.2213
+UMAP    - Mean z-score: -0.3470 ± 0.4222
+t-SNE   - Mean z-score: -0.4824 ± 0.5040
+
+UMAP p-value:  0.0001
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant"
+romanov,mouse diencephalon cells,standard preprocessing pipeline,https://www.nature.com/articles/nn.4462,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672,"Data: 5000 points
+Edges: 31865 total, 10515 low-energy
+
+EmbedOR - Mean z-score: -0.3789 ± 0.1104
+UMAP    - Mean z-score: -0.3109 ± 0.1515
+t-SNE   - Mean z-score: -0.4788 ± 0.3014
+
+UMAP p-value:  0.0001
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant",,
+baron,human and mouse pancreatic cells,concatenate 4 human files and 2 mouse files into respective species data,https://www.sciencedirect.com/science/article/pii/S2405471216302666?via%3Dihub ,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361,"human: 
+Data: 5000 points
+Edges: 59272 total, 19559 low-energy
+
+EmbedOR - Mean z-score: -0.3763 ± 0.3177
+UMAP    - Mean z-score: -0.2382 ± 0.3504
+t-SNE   - Mean z-score: -0.4205 ± 0.4005
+
+UMAP p-value:  0.0001
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  SIGNIFICANT
+EmbedOR < t-SNE: not significant","mouse:
+Data: 5000 points
+Edges: 21105 total, 6964 low-energy
+
+EmbedOR - Mean z-score: -0.2764 ± 0.2514
+UMAP    - Mean z-score: -0.2754 ± 0.4818
+t-SNE   - Mean z-score: -0.3867 ± 0.4355
+
+UMAP p-value:  0.4473
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  not significant
+EmbedOR < t-SNE: not significant",
+gardner ,already preprocessed,convert to .npy,https://www.nature.com/articles/s41586-021-04268-7,https://figshare.com/articles/dataset/Toroidal_topology_of_population_activity_in_grid_cells/16764508?file=35078602 (rat r files),"day 1: 
+Data: 5000 points
+Edges: 4578 total, 1510 low-energy
+
+EmbedOR - Mean z-score: -0.1162 ± 0.2372
+UMAP    - Mean z-score: -0.3035 ± 0.1020
+t-SNE   - Mean z-score: -0.9587 ± 0.3519
+
+UMAP p-value:  1.0000
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  not significant
+EmbedOR < t-SNE: not significant","day 2:
+Data: 5000 points
+Edges: 25680 total, 8474 low-energy
+
+EmbedOR - Mean z-score: -0.2020 ± 0.6656
+UMAP    - Mean z-score: -0.3015 ± 0.0912
+t-SNE   - Mean z-score: -0.4623 ± 0.1389
+
+UMAP p-value:  1.0000
+t-SNE p-value: 1.0000
+
+Significance at alpha=0.01:
+EmbedOR < UMAP:  not significant
+EmbedOR < t-SNE: not significant",
+,,,,,,,
+,,,,,,,
+,,,,,,,
+6,,,,,,,
