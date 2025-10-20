@@ -1,7 +1,7 @@
 """
 Permutation testing with 10, 000 resamples
 
-Compares low ∆E edge expansion between EmbedOR, tSNE, and UMAP.
+Compares low ∆E edge expansion between EmbedOR, tSNE, and UMAP (extension of table 6 in EmbedOR paper).
 """
 
 import numpy as np
