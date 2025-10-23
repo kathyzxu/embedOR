@@ -1,4 +1,4 @@
-dataset,content,additional preprocessing steps,reference paper link,data accession link,,,,high energy edge contraction results
+dataset,content,additional preprocessing steps,reference paper link,data accession link,
 cifar10,color images across 10 image classes,trained using a convolutional neural network (CNN) accoridng to the following blog post: https://medium.com/@pslinge144/representation-learning-cifar-10-23b0d9833c40 ,N/A,N/A (downloaded through pytorch),,,,
 klein,mouse embryonic stem cells (sample 1),filering + normalization + log-transformation + select top 2000 most variable genes + PCA on 12 PCs (specified in paper),https://www.sciencedirect.com/science/article/pii/S0092867415005000?via%3Dihub,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65525 ,,,,
 camp,mouse arcuate nucleus and median eminence,N/A (dataset previously preprocessed),https://www.pnas.org/doi/full/10.1073/pnas.1520760112,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133,,,,
@@ -12,4 +12,5 @@ zeisel,mouse cortex cells,filering + normalization + log-transformation + select
 romanov,mouse diencephalon cells,filering + normalization + log-transformation + select top 2000 most variable genes + PCA on 50 PCs,https://www.nature.com/articles/nn.4462,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672,,,,
 baron ,"human and mouse pancreatic cells (human sample 1, both mouse samples)","concatenate two mouse files
 filering + normalization + log-transformation + select top 2000 most variable genes + PCA on 50 PCs by species",https://www.sciencedirect.com/science/article/pii/S2405471216302666?via%3Dihub ,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133,,,,
+
 kang,"PBMCs from lupus patients (samples A, B, C)",select top 2000 most variable genes + PCA on top 50 PCs (dataset previously filtered and normalized),https://pmc.ncbi.nlm.nih.gov/articles/PMC5784859/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96583 ,,,,
