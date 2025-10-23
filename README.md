@@ -2,7 +2,7 @@
 
 The embedOR algorithm was tested against tSNE and UMAP on various datasets. 
 
-Respository contains preprocessing scripts, visualizations, and result statistics.
+This respository contains preprocessing scripts, visualizations, and result statistics.
 
 Notes: 
 * The only non-scRNA-seq datasets are Wikipedia (text) and CIFAR (images), both of which were embedded into vector representations using machine learning models.
