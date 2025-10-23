@@ -1,4 +1,4 @@
-# Testing embedOR algorithm on 15 datasets that have been previously visualized using TSNE and/or UMAP
+# Testing embedOR algorithm on datasets previously visualized using TSNE and/or UMAP
 
 Notes: 
 * The only non-scRNA-seq datasets are Wikipedia (text) and CIFAR (images), both of which were embedded into vector representations using machine learning models.
