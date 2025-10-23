@@ -1,4 +1,6 @@
-# Testing embedOR algorithm on datasets previously visualized using TSNE and/or UMAP
+# Testing embedOR algorithm in comparison with tSNE and UMAP
+
+The embedOR clustering algorithm was tested against tSNE and UMAP on 13 dataset sources. Preprocessing scripts, visualizations, and results are documented.
 
 Notes: 
 * The only non-scRNA-seq datasets are Wikipedia (text) and CIFAR (images), both of which were embedded into vector representations using machine learning models.
