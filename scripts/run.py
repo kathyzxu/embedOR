@@ -1,7 +1,3 @@
-from src.data.data import *
-from src.embedor import *
-from src.plotting import *
-from src.utils.orcmanl import *
 import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
@@ -12,10 +8,24 @@ import numpy as np
 from sklearn.manifold import TSNE, Isomap
 import phate
 import json
+
+import sys
 import os
 
-REPO_ROOT = os.getenv('PYTHONPATH') or os.getcwd()
-sns.set_theme()
+repo_root = "/content/drive/MyDrive/embedor"
+sys.path.insert(0, repo_root)
+
+print("[INFO] sys.path[0]:", sys.path[0])
+
+# ensure src is a package
+init_file = os.path.join(repo_root, "src", "__init__.py")
+os.makedirs(os.path.dirname(init_file), exist_ok=True)
+open(init_file, "a").close()
+
+from src.data.data import *
+from src.embedor import *
+from src.plotting import *
+from src.utils.orcmanl import *
 
 exp_params = {
     'p': 3,
@@ -154,5 +164,6 @@ if __name__ == "__main__":
     parser.add_argument("np_file", type=str, help="Path to .npy dataset")
     parser.add_argument("--n_points", type=int, default=None, help="Number of points to use")
     parser.add_argument("--seed", type=int, default=0, help="Random seed")
+    parser.add_argument("--layout", type=str, default="numpy", choices=["numpy", "torch"], help="EmbedOR backend to use")
     args = parser.parse_args()
     run_pipeline(args.np_file, n_points=args.n_points, seed=args.seed)
