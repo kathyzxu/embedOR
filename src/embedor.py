@@ -177,9 +177,9 @@ class EmbedOR(object):
             A_perp = kneighbors_graph(self.apsp, n_neighbors=n_neighbors, mode='connectivity', metric='precomputed')
             row, col = A_perp.nonzero()
             apsp_perp = csr_matrix((self.apsp[row, col], (row, col)), shape=A_perp.shape)
-            self.all_affinities = squareform(joint_probabilities_nn(apsp_perp, desired_perplexity=self.perplexity))
+            self.all_affinities = squareform(joint_probabilities_nn(apsp_perp, desired_perplexity=self.perplexity, verbose = False))
         else:
-            self.all_affinities = squareform(joint_probabilities(self.apsp, desired_perplexity=self.perplexity))
+            self.all_affinities = squareform(joint_probabilities(self.apsp, desired_perplexity=self.perplexity, verbose = False))
         self.all_affinities = (self.all_affinities + self.all_affinities.T)/2
         self.all_repulsions = 1 - self.all_affinities
         np.fill_diagonal(self.all_affinities, 0)
