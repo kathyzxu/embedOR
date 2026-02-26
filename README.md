@@ -1,4 +1,4 @@
-# embedOR
+# Official implementation for the paper 'EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings'
 
 ## Installation
 
