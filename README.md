@@ -2,17 +2,9 @@
 
 **Official implementation of the paper:**  [*"EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings"*](https://arxiv.org/pdf/2509.03703)
 
-## Repository Structure:
+## Getting Started
 
-embedor/
-├─ benchmarking/     # Generated visualizations and stats against other clustering algorithms
-├─ sample_data/      # Example dataset
-├─ scripts/          # Example scripts and tutorial
-├─ src/              # Python modules for EmbedOR
-├─ requirements.txt  # Python dependencies
-└─ README.md
-
-## Installation
+### Installation
 
 Clone the repository:
 
@@ -36,16 +28,13 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Run
-
-### To run the main script:
-
+### Run
+You can test on the sample dataset:
 ``` bash
-python scripts/run.py <np_file> [--labels <labels_file>] [--n_points N] [--seed SEED] [--layout {numpy,torch}]
+python scripts/run.py preprocessed_data/chimp.npy --labels preprocessed_data/chimp.labels.npy --n_points 5000 --seed 42 --layout torch
 ```
 
-Test on chimp dataset:
-
+Or on any .npy  file with the following command: 
 ``` bash
-python scripts/run.py preprocessed_data/chimp.npy --labels preprocessed_data/chimp.labels.npy --n_points 1000 --seed 42 --layout numpy
+python scripts/run.py <np_file> [--labels <labels_file>] [--n_points N] [--seed SEED] [--layout {numpy,torch}]
 ```
