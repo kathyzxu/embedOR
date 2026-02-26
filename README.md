@@ -1,6 +1,6 @@
 # EmbedOR
 
-**Official implementation of the paper:**  [*"EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings"*](https://arxiv.org/pdf/2509.03703)
+**Implementation of the paper:**  [*"EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings"*](https://arxiv.org/pdf/2509.03703)
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Run
+### Test
 You can test on the sample dataset:
 ``` bash
 python scripts/run.py preprocessed_data/chimp.npy --labels preprocessed_data/chimp.labels.npy --n_points 5000 --seed 42 --layout torch
