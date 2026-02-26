@@ -1,0 +1,14 @@
+dataset,content,reference paper link,data accession link
+baron ,"human and mouse pancreatic cells (human sample 1, both mouse samples)",https://www.sciencedirect.com/science/article/pii/S2405471216302666?via%3Dihub ,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133
+camp,mouse arcuate nucleus and median eminence,https://www.pnas.org/doi/full/10.1073/pnas.1520760112,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133
+cifar10,color images across 10 image classes,N/A,N/A
+paul,myeloid progenitor cells,https://www.sciencedirect.com/science/article/pii/S0092867415014932,https://zenodo.org/records/3514910
+kang,"PBMCs from lupus patients (samples A, B, C)",https://pmc.ncbi.nlm.nih.gov/articles/PMC5784859/,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96583 
+klein,mouse embryonic stem cells (sample 1),https://www.sciencedirect.com/science/article/pii/S0092867415005000?via%3Dihub,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE65525 
+kanton,primate cerebral organoids,https://www.nature.com/articles/s41586-019-1654-9 ,https://github.com/dkobak/low-dim-embeddings-review/tree/main/data/Kanton-et-al/human-409b2 
+petropoulos,human embryo cells along three developmental stages,https://pmc.ncbi.nlm.nih.gov/articles/PMC4868821/,10.5281/zenodo.13640496
+romanov,mouse diencephalon cells,https://www.nature.com/articles/nn.4462,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672
+tsai,mouse hypothalamus cells,https://portals.broadinstitute.org/single_cell/study/a-molecular-census-of-arcuate-hypothalamus-and-median-eminence-cell-types,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE93374
+wagner,zebrafish embryo cells,https://kleintools.hms.harvard.edu/paper_websites/wagner_zebrafish_timecourse2018/mainpage.html (scanpy version) ,https://www.science.org/doi/10.1126/science.aar4362
+wikipedia,text paragraphs from Simple English Wikipedia,https://arxiv.org/html/2508.15929v1#S4.F3,https://huggingface.co/datasets/Cohere/wikipedia-22-12-simple-embeddings/blob/main/README.md
+zeisel,mouse cortex cells,https://www.science.org/doi/full/10.1126/science.aaa1934,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361

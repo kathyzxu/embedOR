@@ -1,0 +1,36 @@
+{
+    "dataset": {
+        "embedor": {
+            "z_scores_mean": -0.2821836859909954,
+            "z_scores_std": 0.1340831514250904
+        },
+        "embedor_euc": {
+            "z_scores_mean": -0.3169602254798158,
+            "z_scores_std": 0.2144823286528469
+        },
+        "umap": {
+            "z_scores_mean": -0.2496636441532321,
+            "z_scores_std": 0.09995445418569648
+        },
+        "umap_orcmanl": {
+            "z_scores_mean": 0.007344804024529728,
+            "z_scores_std": 1.0119628685626094
+        },
+        "tsne": {
+            "z_scores_mean": -0.31736918185230634,
+            "z_scores_std": 0.27447121581681544
+        },
+        "tsne_orcmanl": {
+            "z_scores_mean": 0.00872821323383372,
+            "z_scores_std": 1.0099402713055505
+        },
+        "phate": {
+            "z_scores_mean": -0.33937068967317635,
+            "z_scores_std": 0.17864626664733985
+        },
+        "iso": {
+            "z_scores_mean": -0.5326010925605287,
+            "z_scores_std": 0.1724977456006659
+        }
+    }
+}

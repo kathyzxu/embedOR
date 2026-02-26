@@ -1,0 +1,114 @@
+dataset,low energy expansion (comparisons),high energy contraction (comparisons),low energy expansion (z-scores),high energy contraction (z-scores)
+baron - mouse,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: not significant
+ µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z-score: -0.2710 ± 0.1377
+UMAP    - Mean z-score: -0.2304 ± 0.1418
+t-SNE   - Mean z-score: -0.3522 ± 0.3199","EmbedOR - Mean z_score: -0.1444 ± 0.3094
+UMAP    - Mean z_score: -0.1443 ± 0.4751
+t-SNE   - Mean z_score: -0.1555 ± 0.5105"
+baron - human,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: not significant
+ µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z-score: -0.2696 ± 0.1734
+UMAP    - Mean z-score: -0.2071 ± 0.1235
+t-SNE   - Mean z-score: -0.3574 ± 0.3941","EmbedOR - Mean z-score: -0.0882 ± 0.3055
+UMAP    -  Mean z-score: -0.1140 ± 0.2825
+t-SNE   -  Mean z-score: -0.1384 ± 0.2477"
+camp,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.6482 ± 0.3075
+UMAP    - Mean z-score: -0.4730 ± 0.5913
+t-SNE   - Mean z-score: -0.5106 ± 0.5589","EmbedOR - Mean z_score: -0.6769 ± 0.3972
+UMAP    - Mean z_score: -0.5710 ± 0.4933
+t-SNE   - Mean z_score: -0.5323 ± 0.5315"
+cifar10,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.5924 ± 0.2158
+UMAP    - Mean z-score: -0.5053 ± 0.2793
+t-SNE   - Mean z-score: -0.5324 ± 0.5668","EmbedOR - Mean z_score: -0.7064 ± 0.4253
+UMAP    - Mean z_score: -0.6426 ± 0.5053
+t-SNE   - Mean z_score: -0.6214 ± 0.5225"
+klein,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z-score: -0.6150 ± 0.4836
+UMAP    - Mean z-score: -0.4910 ± 0.6027
+t-SNE   - Mean z-score: -0.5099 ± 0.6293","EmbedOR - Mean z_score: -0.3201 ± 0.6500
+UMAP    - Mean z_score: -0.2624 ± 0.7938
+t-SNE   - Mean z_score: -0.2915 ± 0.7169"
+kang - sample A,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.4263 ± 0.3154
+UMAP    - Mean z-score: -0.3520 ± 0.2649
+t-SNE   - Mean z-score: -0.4686 ± 0.4343","EmbedOR - Mean z_score: -0.3976 ± 0.4380
+UMAP    - Mean z_score: -0.3627 ± 0.5821
+t-SNE   - Mean z_score: -0.3808 ± 0.5668"
+kang - sample B,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.4476 ± 0.1988
+UMAP    - Mean z-score: -0.3810 ± 0.3654
+t-SNE   - Mean z-score: -0.4775 ± 0.4162","EmbedOR - Mean z_score: -0.4234 ± 0.4463
+UMAP    - Mean z_score: -0.3704 ± 0.5986
+t-SNE   - Mean z_score: -0.3990 ± 0.6231"
+kang - sample C,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.4645 ± 0.2212
+UMAP    - Mean z-score: -0.3470 ± 0.4222
+t-SNE   - Mean z-score: -0.4824 ± 0.5040","EmbedOR - Mean z_score: -0.4249 ± 0.4501
+UMAP    - Mean z_score: -0.3685 ± 0.5810
+t-SNE   - Mean z_score: -0.3900 ± 0.6088"
+kanton,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.3509 ± 0.0971
+UMAP    - Mean z-score: -0.2614 ± 0.0895
+t-SNE   - Mean z-score: -0.4078 ± 0.1893","EmbedOR - Mean z_score: -0.4226 ± 0.2265
+UMAP    - Mean z_score: -0.4114 ± 0.2951
+t-SNE   - Mean z_score: -0.4052 ± 0.3982"
+paul,"µ_EmbedOR < µ_UMAP: not significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: not significant
+ µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z-score: -0.3760 ± 0.6183
+UMAP    - Mean z-score: -0.3645 ± 0.6880
+t-SNE   - Mean z-score: -0.3570 ± 0.7164","EmbedOR - Mean z_score: -0.3947 ± 0.5879
+UMAP    - Mean z_score: -0.3895 ± 0.6156
+t-SNE   - Mean z_score: -0.3791 ± 0.5736"
+petropoulos,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.6789 ± 0.2159
+UMAP    - Mean z-score: -0.6626 ± 0.3638
+t-SNE   - Mean z-score: -0.6745 ± 0.5024","EmbedOR - Mean z_score: -0.8360 ± 0.3818
+UMAP    - Mean z_score: -0.7505 ± 0.4916
+t-SNE   - Mean z_score: -0.7905 ± 0.4467"
+romanov,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant","µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z_score: -0.3991 ± 0.2585
+UMAP    - Mean z_score: -0.3830 ± 0.3099
+t-SNE   - Mean z_score: -0.3885 ± 0.4481","EmbedOR - Mean z-score: -0.3807 ± 0.1068
+UMAP    - Mean z-score: -0.3109 ± 0.1515
+t-SNE   - Mean z-score: -0.4788 ± 0.3014"
+tsai,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.4365 ± 0.1066
+UMAP    - Mean z-score: -0.3961 ± 0.1632
+t-SNE   - Mean z-score: -0.5038 ± 0.2561","EmbedOR - Mean z_score: -0.5453 ± 0.2774
+UMAP    - Mean z_score: -0.5116 ± 0.5068
+t-SNE   - Mean z_score: -0.5113 ± 0.3591"
+wagner,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: not significant
+ µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z-score: -0.3455 ± 0.1462
+UMAP    - Mean z-score: -0.2581 ± 0.1848
+t-SNE   - Mean z-score: -0.3799 ± 0.2432","EmbedOR - Mean z_score: -0.2501 ± 0.2441
+UMAP    - Mean z_score: -0.2566 ± 0.2759
+t-SNE   - Mean z_score: -0.2689 ± 0.2967"
+wikipedia,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: significant","EmbedOR - Mean z-score: -0.6787 ± 0.2321
+UMAP    - Mean z-score: -0.6109 ± 0.3310
+t-SNE   - Mean z-score: -0.6292 ± 0.4817","EmbedOR - Mean z_score: -0.7490 ± 0.3668
+UMAP    - Mean z_score: -0.6949 ± 0.4445
+t-SNE   - Mean z_score: -0.6825 ± 0.4450"
+zeisel,"µ_EmbedOR < µ_UMAP: significant
+µ_EmbedOR < µ_tSNE: not significant"," µ_EmbedOR < µ_UMAP: significant
+ µ_EmbedOR < µ_tSNE: not significant","EmbedOR - Mean z-score: -0.2722 ± 0.1042
+UMAP    - Mean z-score: -0.2473 ± 0.1161
+t-SNE   - Mean z-score: -0.2864 ± 0.3727","EmbedOR - Mean z_score: -0.3991 ± 0.2585
+UMAP    - Mean z_score: -0.3830 ± 0.3099
+t-SNE   - Mean z_score: -0.3885 ± 0.4481"
+
