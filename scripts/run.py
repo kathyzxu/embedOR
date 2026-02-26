@@ -1,3 +1,25 @@
+"""
+Script to generate EmbedOR embeddings, visualizations, and z-score statistics. 
+Compares results against other clustering algorithms.
+
+Usage:
+    python run.py <np_file> [--labels LABELS] [--n_points N_POINTS] [--seed SEED] [--layout {numpy,torch}]
+
+Arguments:
+    np_file             Path to the input .npy dataset
+    --labels LABELS     Optional path to .npy labels file
+    --n_points N_POINTS Number of points to use from the dataset
+    --seed SEED         Random seed for reproducibility (default: 0)
+    --layout {numpy,torch} EmbedOR backend to use (default: numpy)
+
+Outputs:
+    - Embeddings for EmbedOR, UMAP, t-SNE, PHATE, Isomap, and ORCManL
+    - 2D visualizations of graphs and embeddings
+    - Low- and high-energy edge plots
+    - Stats saved as JSON
+
+"""
+
 import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
@@ -17,7 +39,6 @@ sys.path.insert(0, repo_root)
 
 print("[INFO] sys.path[0]:", sys.path[0])
 
-# ensure src is a package
 init_file = os.path.join(repo_root, "src", "__init__.py")
 os.makedirs(os.path.dirname(init_file), exist_ok=True)
 open(init_file, "a").close()
