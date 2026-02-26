@@ -1,8 +1,6 @@
 # EmbedOR
 
-**Official implementation of the paper:**  
-*"EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings"*  
-[Read the paper on arXiv](https://arxiv.org/pdf/2509.03703)
+**Official implementation of the paper:**  [*"EmbedOR: Provable Cluster-Preserving Visualizations with Curvature-Based Stochastic Neighbor Embeddings"*](https://arxiv.org/pdf/2509.03703)
 
 ## Repository Structure:
 
