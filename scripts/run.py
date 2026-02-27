@@ -1,6 +1,5 @@
 """
-Script to generate EmbedOR embeddings, visualizations, and z-score statistics. 
-Compares results against other clustering algorithms.
+Script used to generate visualizations and z-score statistics on test datasets. Takes .npy files. 
 
 Usage:
     python run.py <np_file> [--labels LABELS] [--n_points N_POINTS] [--seed SEED] [--layout {numpy,torch}]
