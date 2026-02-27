@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ### Test
-You can test on the sample dataset:
+You can test on the sample chimp brain organoid dataset:
 ``` bash
 python scripts/run.py preprocessed_data/chimp.npy --labels preprocessed_data/chimp.labels.npy --n_points 5000 --seed 42 --layout torch
 ```
