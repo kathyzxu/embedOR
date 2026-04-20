@@ -6,7 +6,7 @@ from scipy.sparse import csr_matrix
 from scipy.spatial.distance import pdist, squareform
 from sklearn.metrics import pairwise_distances
 from umap.spectral import spectral_layout
-from src.utils.graph_utils import compute_frc, compute_orc, get_nn_graph
+from src.utils.graph_utils import compute_frc, compute_orc, compute_src, get_nn_graph
 from src.utils.layout import *
 from src.plotting import plot_graph_2D
 import scipy
@@ -15,7 +15,8 @@ import torch
 
 ENERGY_PARAMS = {
     'orc': {'k_max': 1, 'k_min': -2, 'k_crit': 0},
-    'frc': {'k_max': 25, 'k_min': -35, 'k_crit': -5}
+    'frc': {'k_max': 25, 'k_min': -35, 'k_crit': -5},
+    'src': {'k_max': 1, 'k_min': -2, 'k_crit': 0},
 }
 
 class EmbedOR(object):
@@ -115,6 +116,10 @@ class EmbedOR(object):
             self.k_min = min(self.k_min, min(self.curvatures)-1)
             self.k_max = max(self.k_max, max(self.curvatures))
             self.G = result['G']
+        elif self.edge_weight == "src":                    
+            result = compute_src(self.G, method="src-spt")
+            self.curvatures = result['orcs']
+            self.G = result['G']
         end = time.time()
         print(f"Time taken to compute {self.edge_weight.upper()}: {end-start:.2f}s")
 
@@ -132,9 +137,15 @@ class EmbedOR(object):
         if self.edge_weight != "euclidean":
             k_max, k_min, k_crit = self.k_max, self.k_min, self.k_crit
             for idx, (u, v) in enumerate(self.G.edges()):
+                # clip
                 orc = self.curvatures[idx]
+                orc = np.clip(orc, k_min + 1e-6, k_max)  # prevent log(<=0)
                 c = 1 / np.log((k_max-k_min)/(k_crit-k_min))
                 energy = (-c*np.log(orc - k_min) + c*np.log(k_crit - k_min) + 1)**self.p + 1
+
+                # orc = self.curvatures[idx]
+                # c = 1 / np.log((k_max-k_min)/(k_crit-k_min))
+                # energy = (-c*np.log(orc - k_min) + c*np.log(k_crit - k_min) + 1)**self.p + 1
                 energy = np.clip(energy, 0, max_val) * self.G[u][v]['weight']
                 self.G[u][v]['energy'] = energy
                 self.energies.append(energy)
