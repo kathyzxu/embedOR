@@ -34,6 +34,63 @@ def compute_orc(G, nbrhood_size=1):
     }
 
 @timer
+def compute_src(G, method="src-spt", delta=0.5, p=1.0, length_attr="unweighted"):
+    """
+    Compute Sobolev-Ricci Curvature on edges of a graph.
+    Parameters
+    ----------
+    G : networkx.Graph
+    method : str
+        Tree method: "src-spt", "src-mst", or "src-randtree"
+    delta : float
+        Mass kept at self node (analogous to alpha in ORC)
+    p : float
+        Lp norm parameter
+    length_attr : str
+        Edge attribute to use as length
+    """
+    from src.curvature import (
+        _neighbors_arrays, _edge_index_arrays,
+        _build_tree_parent, _calculate_src_curvature
+    )
+
+    if not nx.get_edge_attributes(G, length_attr):
+        for (u, v) in G.edges():
+            G[u][v][length_attr] = 1.0
+
+    nodes = list(G.nodes())
+    root = nodes[0]  \
+
+    neigh_idx_list, deg = _neighbors_arrays(G, nodes)
+    u_idx, v_idx, L = _edge_index_arrays(G, nodes, length_attr=length_attr)
+    order, parent, plen = _build_tree_parent(G, root, method=method, length_attr=length_attr)
+
+    kappas, _, _, _ = _calculate_src_curvature(
+        parent=parent,
+        plen=plen,
+        method=method,
+        step=0,
+        n=len(nodes),
+        neigh_idx_list=neigh_idx_list,
+        deg=deg,
+        delta=delta,
+        L=L,
+        u_idx=u_idx,
+        v_idx=v_idx,
+        p=p,
+    )
+
+    srcs = []
+    for e, (u, v, _) in enumerate(G.edges(data=True)):
+        G[u][v]['srcCurvature'] = float(kappas[e])
+        srcs.append(float(kappas[e]))
+
+    return {
+        'G': G,
+        'orcs': srcs,  
+    }
+
+@timer
 def compute_frc(G):
     """
     Compute the Forman-Ricci curvature on edges of a graph.
