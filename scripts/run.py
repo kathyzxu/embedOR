@@ -110,6 +110,8 @@ def run_pipeline(np_file, n_points=None, seed=0, labels=None):
     embedding = embedor.fit_transform(data)
     embedor_euc = EmbedOR(exp_params, edge_weight='euclidean')
     embedding_euc = embedor_euc.fit_transform(data)
+    embedor_src = EmbedOR(exp_params, edge_weight='src')
+    embedding_src = embedor_src.fit_transform(data)
     umap_emb = umap.UMAP(n_neighbors=15, min_dist=0.1, metric='euclidean').fit_transform(data)
     umap_orcmanl_emb = umap.UMAP(n_neighbors=15, min_dist=0.1, metric='precomputed').fit_transform(apsp)
     tsne_emb = TSNE(n_components=2, perplexity=30, n_iter=300, init='random').fit_transform(data)
@@ -141,6 +143,7 @@ def run_pipeline(np_file, n_points=None, seed=0, labels=None):
     stats_dict['dataset'] = {
         'embedor': dict(zip(['z_scores_mean','z_scores_std'], low_energy_edge_stats(embedding, embedor.G, low_energy_graph)[:2])),
         'embedor_euc': dict(zip(['z_scores_mean','z_scores_std'], low_energy_edge_stats(embedding_euc, embedor_euc.G, low_energy_graph)[:2])),
+        'embedor_src': dict(zip(['z_scores_mean','z_scores_std'], low_energy_edge_stats(embedding_src, embedor_src.G, low_energy_graph)[:2])),
         'umap': dict(zip(['z_scores_mean','z_scores_std'], low_energy_edge_stats(umap_emb, embedor.G, low_energy_graph)[:2])),
         'umap_orcmanl': dict(zip(['z_scores_mean','z_scores_std'], low_energy_edge_stats(umap_orcmanl_emb, embedor.G, low_energy_graph)[:2])),
         'tsne': dict(zip(['z_scores_mean','z_scores_std'], low_energy_edge_stats(tsne_emb, embedor.G, low_energy_graph)[:2])),
@@ -152,6 +155,7 @@ def run_pipeline(np_file, n_points=None, seed=0, labels=None):
     embeddings = {
         'embedor': embedding,
         'embedor_euc': embedding_euc,
+        'embedor_src': embedding_src,
         'umap': umap_emb,
         'umap_orcmanl': umap_orcmanl_emb,
         'tsne': tsne_emb,
